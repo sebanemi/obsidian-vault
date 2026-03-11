@@ -12,7 +12,18 @@ INTERRUPCIONES: De la secuencia del programa para atender eventos exteriores imp
 
 DESCONECTARSE: Poniendo su Bus de Direcciones y Datos en Estado de Alta Impedancia para permitir que otro procesador acceda a las mismas memorias y periféricos
 
-
+---
 ## Funcionalidad
 
 Conectado a memorias e interfaces seriales y paralelas permite resolver problemas computacionales en plataformas informáticas, robóticas y mecatrónicas. 
+
+## Bloques de su arquitectura
+
+Que lo conectan con el exterior [[Bus de Datos]], [[Bus de Direcciones]] y [[Bus de Control]], para leer y escribir en memorias e interfaces de entrada/salida y otros dispositivos externos.
+
+**Registros internos**: [[Contador de Programa]], [[Acumuladores A y B]], [[Registro Índice]], [[Registro de Condiciones]] y [[Puntero de Pila]]
+
+**Bloques internos**: [[Unidad Lógica Aritmética]], [[Decodificador de Instrucciones]] y [[Unidad de control]] no son accesibles para el programador pero conocer su existencia nos ayuda a entender el funcionamiento del dispositivo.
+
+---
+El avance en la ejecución del programa siendo la secuencia de instrucciones o la iteración cuando están anidadas y las decisiones o bifurcaciones saltos del programa de acuerdo al resultado de la ejecución de instrucciones que alteran distintas banderas del registro de condiciones.

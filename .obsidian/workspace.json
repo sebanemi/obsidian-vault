@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a653a550188af7a6",
+            "id": "39c593fafed673b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,20 +22,49 @@
             }
           },
           {
-            "id": "69caea31d7399e85",
+            "id": "685c7be5d73e40da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arquitectura de Computadoras/Procesador.md",
+                "file": "Arquitectura de Computadoras/Bus de Direcciones.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Procesador"
+              "title": "Bus de Direcciones"
+            }
+          },
+          {
+            "id": "e73ebcfd76d46e49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arquitectura de Computadoras/Unidad Lógica Aritmética.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Unidad Lógica Aritmética"
+            }
+          },
+          {
+            "id": "b987a0e8c709a0dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Arquitectura de Computadoras/Puntero de Pila.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Puntero de Pila"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -54,7 +83,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTimeReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -175,13 +204,23 @@
               "icon": "lucide-list",
               "title": "Esquema"
             }
+          },
+          {
+            "id": "ee191f021239205c",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,13 +230,22 @@
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false
+      "bases:Crear nueva base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a653a550188af7a6",
+  "active": "685c7be5d73e40da",
   "lastOpenFiles": [
-    "Arquitectura de Computadoras/Procesador.md",
+    "Arquitectura de Computadoras/Puntero de Pila.md",
     "Arquitectura de Computadoras/Arquitectura de Computadoras.md",
+    "Arquitectura de Computadoras/STACK POINTER.md",
+    "Arquitectura de Computadoras/Bus de Direcciones.md",
+    "Arquitectura de Computadoras/Contador de Programa.md",
+    "Arquitectura de Computadoras/Unidad Lógica Aritmética.md",
+    "Arquitectura de Computadoras/Procesador.md",
+    "Datasheet MC6800.md",
+    "Arquitectura de Computadoras/Sin título.canvas",
+    "Arquitectura de Computadoras/Sin título.base",
     "Ley de Ohm.md",
     "Electrotécnia I/Electrotecnia I.md",
     "Paradigmas III/Paradigmas III.md",
