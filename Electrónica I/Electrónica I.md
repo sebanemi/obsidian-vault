@@ -37,8 +37,7 @@ La distancia de este salto se conoce como la [[Brecha de Energía]] (Eg) (Indica
 
 ## Material intrínseco
 
-Un material intrínseco puro es inutil para la electrónica de precisión.
-
+Un material intrínseco puro es inútil para la electrónica de precisión.
 El verdadero control se logra mediante el [[Dopado]].
 
 ## Dopado
@@ -53,8 +52,49 @@ El material sigue siendo eléctricamente neutro, pero ahora está inundado de el
 
 Materiales tipo N y materiales tipo P son semiconductores que fueron modificados artificialmente mediante dopado para que conduzcan electricidad de una forma específica.
 
-**Material tipo N: Se obtiene cuando se agregan al silicio átomos con más electrones de valencia que el silicio. Los portadores mayoritarios son los electrones y los minoritarios los huecos. Tiene carga dominante negativa(?¿)**
+**Material tipo N**: Se obtiene cuando se agregan al silicio átomos con más electrones de valencia que el silicio. Los portadores mayoritarios son los electrones y los minoritarios los huecos. Tiene carga dominante negativa. *Lo dopas con algo que lo hace más negativo que neutro*
 
-**Material tipo P:**
+**Material tipo P:** *Lo dopas con algo que lo hace más positivo que neutro*
 
-Duda: ¿Los materiales tipo N son negativos, los P positivos, por lo que el material sigue siendo eléctricamente neutro?**
+==¿Cuándo se hace neutra?==
+
+---
+## Diodo
+
+El diodo está formado por una juntura PN (Cuando se junta un material P con un material N).
+En la unión, vamos a ver la mezcla de ambos materiales. Se va a formar una región con un poco de positivo y un poco de negativo. Esta zona es la **zona muerta** 
+
+Simbolo de diodo (anodo (+) - catodo (-))
+
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Línea izquierda (ánodo) -->
+  <line x1="0" y1="50" x2="50" y2="50" stroke="currentColor" stroke-width="2"/>
+  <!-- Triángulo (cuerpo del diodo) -->
+  <polygon points="50,20 50,80 95,50" fill="currentColor"/>
+  <!-- Línea vertical (cátodo) -->
+  <line x1="95" y1="20" x2="95" y2="80" stroke="currentColor" stroke-width="2"/>
+  <!-- Línea derecha (cátodo) -->
+  <line x1="95" y1="50" x2="145" y2="50" stroke="currentColor" stroke-width="2"/>
+
+  <!-- Etiquetas ánodo -->
+  <text x="22" y="18" text-anchor="middle" font-size="13" fill="currentColor">A</text>
+  <text x="22" y="34" text-anchor="middle" font-size="13" fill="currentColor">(+)</text>
+
+  <!-- Etiquetas cátodo -->
+  <text x="122" y="18" text-anchor="middle" font-size="13" fill="currentColor">C</text>
+  <text x="122" y="34" text-anchor="middle" font-size="13" fill="currentColor">(−)</text>
+</svg>
+
+Funciona como una válvula y es unidireccional. El estado de la válvula depende de su polarización. Hay dos tipos de polarización:
+- Directa: Llave cerrada. Mayor potencial en el ánodo que en el cátodo. Menor zona muerta
+- Inversa: Llave abierta. Menor potencial en el ánodo que en el cátodo. Mayor zona muerta
+
+En un circuito electrónico, nuestro centro de referencia de 0V es la masa (!= tierra)
+
+El led también es un diodo.
+
+El diodo nos permite un montón de cosas.
+
+%%Gráfico de diodo (I-V)%%
+
+
