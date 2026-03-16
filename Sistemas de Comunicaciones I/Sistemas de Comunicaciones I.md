@@ -151,13 +151,64 @@ Aparece la modularización.
 ### [[OSI]]
 
 OSI (Open Systems Interconnection)
+Desarrollada por la UIT. 
+La **ISO** hizo el modelo **OSI**.
+Este es un "mapa" o guía
+Usa 7 capas, donde capa capa le agrega una cabecera donde están los campos de control según la misión que tiene la capa. Ambas cosas forman la unidad de protocolo de datos:
+1. Física: Señalización y transmisión binaria. Establece las especificaciones mecánicas, eléctricas y lógicas para ejecutar los procedimientos necesarios para comenzar a mantener y finalizar la conexión física.
+2. Enlace de datos: Direccionamiento físico
+3. Red: Determinación de ruta y direccionamiento lógico
+4. Transporte: Conexión de extremo a extremo y confiabilidad
+5. Sesión: Comunicación entre dispositivos de red
+6. Presentación: Representación de datos y encriptación
+7. Aplicación: Servicios de red a aplicaciones. 
 
+El modelo distribuye entre las capas las funciones que se necesitan cumplir para lograr una comunicación segura y eficiente. Los protocolos de cada capa deben proporcionar servicios a la capa inmediata superior mediante funciones.
 ### [[DARPA]]
 
 DARPA (Defense Advanced Research Project Agency): Incluye los protocolos conocidos como [[TCP/IP]]
+Conmutación de paquetes + TCP/IP (Tecnologías aplicadas)
+TCP trabaja en capa de transporte e IP trabaja en capa de red.
+La capa par del TCP es la misma terminal a la que se envía.
+Usa 4 capas:
+1. Interfase de red: Capa de enlace + física. Utiliza una sub-capa para poder subdividir la tarea.
+	- IEEE 802.3: Protocolo contencioso, "*me peleo por el medio*".
+	- IEEE 802.4: Protocolo determinístico, Token Bus. 
+	- IEEE 802.5: Red Token Ring
+	- X25: Protocolo WAN
+	- FRAME RELAY / PPP / ATM: Conmutación de paquetes, circuitos virtuales
+2. Internet: Capa de red
+    - IP
+    - ARP
+    - RARP
+    - ICMP: Para ver como están las conexiones. Ej: Comando `ping` o `tracert`.
+    - RP
+3. Transporte: Capa de transporte
+    - TCP: Muy seguro, servicio orientado a la conexión. Antes de la comunicación de datos hace un *apretón de manos*. Mensajes secuenciales. Para no tener bits erróneos.
+    - UDP: No orientado a la conexión. No le importa si el receptor está despierto o no. Es sensible al tiempo. 
+4. Aplicación: Capa de sesión + presentación + aplicación
 
 ---
 
-Venir con el material analizado previo a la clase y en las clases resolver las clases teóricas.
+La comunicación entre capas es entre capas pares. 
 
-Trabajo con software de simulaciones para los trabajos prácticos.
+## [[La red Internet]]
+
+Red internacional por un conjunto de varias redes independientes operadas en forma autónoma, interconectadas por medio de protocolos y procedimientos normalizados como estándares de internet que permiten comunicaciones entre 2 equipos terminales de cualquier red si se identifican con una dirección numérica única (**IP**). 
+
+DNS: Sistema de nombres de dominio que utiliza nombres separados por puntos. Su jerarquia es de **DERECHA A IZQUIERDA**. 
+
+El responsable primario es la Internet Society, pero delega la administracion y organizacion en:
+- Internet Architecture Board
+- Internet Engineering Task Group
+
+**Normalización**: Consenso documentado con especificaciones técnicas u otros criterios a ser usado como regla, guia o definicion de características para asegurar que determinado material, producto, proceso o servicio sea el ideal para su propósito. 
+Cada vez que saco un protocolo, saco un grupo de trabajo para ir mejorando ese protocolo.
+
+==VER CURSO DE CISCO==
+
+¿Cómo conmutan las redes?
+Conmutación (NODOS):
+- De circuitos: Enlace físico permanente. Requiere señalización. Orientado a la conexión. No conmutación de paquetes
+- De paquetes o circuitos virtuales: Se le da una etiqueta a cada bloque de datos y tiene definido el circuito que debe tomar. No se toma decisión de encaminamiento. Si se cae un nodo, se pierde la comunicación. Orientado a la conexión. No es segura. 
+- De mensajes o datagrama: Bloques de datos. Cada nodo toma una decisión de encaminamiento. Red de mejor esfuerzo. Red segura, pero lenta
