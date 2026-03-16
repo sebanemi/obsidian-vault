@@ -51,7 +51,7 @@ IRQ: Pedido de interrupción, ósea que es una interrupción enmascarable. Las i
 
 Además de escribir en memoria, se escribe en las interfaces (serie y paralela). Una interface en serie manda 1 y 0 en serie. Una interface en paralelo pone en 1 y 0 varios pines a la vez. El procesador no solo escribe y lee en memoria sino que escribe o lee de una *patita* en paralelo.
 
-R/W: Se comunica con la memoria y/o las interfaces y si está en alto es porque voy a leer está en alto y si voy a escribir está en bajo. Sabe donde por una dirección dada por el [[Bus de Direcciones]].
+R/W: Se comunica con la memoria y/o las interfaces y si está en alto es porque voy a leer y si voy a escribir está en bajo. Sabe donde por una dirección dada por el [[Bus de Direcciones]].
 
 El fabricante para facilitar la interpretación de las direcciones de memoria en vez de darlas en binario, las da en **hexadecimal**.
 
