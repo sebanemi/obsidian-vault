@@ -12,13 +12,12 @@ Dentro de una computadora, un transistor es una llave que se cierra con altos (1
 
 Mezclando transistores y poniendo diodos yo puedo obtener distintas [[Compuertas Lógicas]] para obtener resultados.
 
-## Clock
+## [[Clock]]
 
 **Clock**: Otro componente, multivibrador que lo que hace es producir señales de onda cuadrada.
-
 No puede haber computadoras sin clock.
-
 Para poder manejar los cambios de estado si o sí tiene que haber un clock.
+Define la velocidad en la que el procesador puede hacer calculos
 
 ## [[Procesador]]
 
@@ -74,3 +73,22 @@ Three-state control: Una señal que viene de afuera que al mandar un alto, se de
 [[Acumuladores A y B]]: No puede manejar contenido de la memoria si estos datos no están en alguno o en ambos de los acumuladores. Para hacer cualquier operación lógica o matemática los datos tienen que estar en alguno o en los dos.
 
 H de High y L de Low. En HIGH los bits mas significativos y en LOW, los menos.
+
+---
+
+El programa esta en la memoria con los datos, lee, decodifica, busca y ejecuta.
+
+Todo lo que escribe y lee es a través del **[[Bus de Datos]]** (8 bits / 1 byte) y el dónde lee y escribe está dado por el **[[Bus de Direcciones]]** (16 bits / 2 bytes). 
+**Bus de contorno**: Conjunto de patitas donde está el clock.
+
+Sin interrupciones no hay forma de comunicarse con el exterior.
+
+La memoria tiene 64k bytes de direcciones para acceder a memoria ($2^{16}$), y para encontrar un lugar en memoria necesito 16 bits. Esto significa que puede direccionar hasta 64k bytes en total.
+
+En memoria escribe dividiendo los datos en bytes, ósea que si hay un numero de 16 bits, lo divide en 2.
+
+**[[Interfaz]]**: Medio de comunicación entre el procesador y el mundo externo. La interfaz traduce y adapta.
+- Serie: Transfiere bit por bit. Maneja timing y sincronización.
+- Paralelo: Transfiere varios bits a la vez. Maneja I/O, permite escribir y leer simultáneamente y puede generar interrupciones. 
+
+Index register: Registro de dos bytes o 16 bits que se usa para guardar datos o una dirección de memoria de 16 bits y se utiliza el modo de direccionamiento indexado. Sirve para trabajar con arrays, tablas y strings, osea que permite recorrer la memoria facilmente. Permite calcular direcciones dinamicamente. 
