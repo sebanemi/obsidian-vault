@@ -50,7 +50,7 @@ IRQ: Pedido de interrupción, ósea que es una interrupción enmascarable. Las i
 
 Además de escribir en memoria, se escribe en las interfaces (serie y paralela). Una interface en serie manda 1 y 0 en serie. Una interface en paralelo pone en 1 y 0 varios pines a la vez. El procesador no solo escribe y lee en memoria sino que escribe o lee de una *patita* en paralelo.
 
-R/W: Se comunica con la memoria y/o las interfaces y si está en alto es porque voy a leer está en alto y si voy a escribir está en bajo. Sabe donde por una dirección dada por el [[Bus de Direcciones]].
+R/W: Se comunica con la memoria y/o las interfaces y si está en alto es porque voy a leer y si voy a escribir está en bajo. Sabe donde por una dirección dada por el [[Bus de Direcciones]].
 
 El fabricante para facilitar la interpretación de las direcciones de memoria en vez de darlas en binario, las da en **hexadecimal**.
 
@@ -91,4 +91,17 @@ En memoria escribe dividiendo los datos en bytes, ósea que si hay un numero de 
 - Serie: Transfiere bit por bit. Maneja timing y sincronización.
 - Paralelo: Transfiere varios bits a la vez. Maneja I/O, permite escribir y leer simultáneamente y puede generar interrupciones. 
 
-Index register: Registro de dos bytes o 16 bits que se usa para guardar datos o una dirección de memoria de 16 bits y se utiliza el modo de direccionamiento indexado. Sirve para trabajar con arrays, tablas y strings, osea que permite recorrer la memoria facilmente. Permite calcular direcciones dinamicamente. 
+**Index register**: Registro de dos bytes o 16 bits que se usa para guardar datos o una dirección de memoria de 16 bits y se utiliza el modo de direccionamiento indexado. Sirve para trabajar con arrays, tablas y strings, ósea que permite recorrer la memoria fácilmente. Permite calcular direcciones dinámicamente.  
+
+**[[Modos de direccionamiento]]**: Define cómo obtiene los datos que va a usar una instrucción, es decir, le dice donde sacar el operando. Instrucciones que están divididas por modos de direccionamiento
+- Inmediato: El dato está en la instrucción. El dato está en la instrucciones. El operando es el valor con el que se va a operar.
+- Directo: Se accede a una dirección de memoria de 8 bits. El dato sale de memoria (0 - 255).
+- Extendido: Se usa dirección completa de 16 bits. El dato sale de la memoria completa.
+- Indexado: Usa el [[Index Register]] como base. El dato sale del IR más desplazamiento. Recorrer tablas con lugares sucesivos de memoria.
+- Inherente: No necesita operandos. El dato sale implícito.
+- Relativo: Usado en saltos (branch). El dato sale del [[Contador de Programa]] y el offset. 
+
+**Software interrupt**: Es una instruccion puesta por el programador
+**Non-Maskarabke interrupt**: Interrupción "de emergencia" o "imparable"
+**Interuption request**: Interrupción que puedo atender o no
+El programador define qué es lo que hace cada rutina de interrupción.
