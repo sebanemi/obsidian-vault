@@ -27,7 +27,7 @@ El procesador tiene que tener:
 - iteración
 - poder sincronizarse con eventos externos
 
-## Interrupciones
+## [[Interrupciones]]
 
 Eventos externos se manejan como Interrupciones (*Interrupt Requests*).
 
@@ -79,7 +79,7 @@ H de High y L de Low. En HIGH los bits mas significativos y en LOW, los menos.
 El programa esta en la memoria con los datos, lee, decodifica, busca y ejecuta.
 
 Todo lo que escribe y lee es a través del **[[Bus de Datos]]** (8 bits / 1 byte) y el dónde lee y escribe está dado por el **[[Bus de Direcciones]]** (16 bits / 2 bytes). 
-**Bus de contorno**: Conjunto de patitas donde está el clock.
+**[[Bus de Control]]**: Conjunto de patitas donde está el clock.
 
 Sin interrupciones no hay forma de comunicarse con el exterior.
 
@@ -97,7 +97,7 @@ En memoria escribe dividiendo los datos en bytes, ósea que si hay un numero de 
 - Inmediato: El dato está en la instrucción. El dato está en la instrucciones. El operando es el valor con el que se va a operar.
 - Directo: Se accede a una dirección de memoria de 8 bits. El dato sale de memoria (0 - 255).
 - Extendido: Se usa dirección completa de 16 bits. El dato sale de la memoria completa.
-- Indexado: Usa el [[Index Register]] como base. El dato sale del IR más desplazamiento. Recorrer tablas con lugares sucesivos de memoria.
+- Indexado: Usa el Index Register ([[Registro Índice]]) como base. El dato sale del IR más desplazamiento. Recorrer tablas con lugares sucesivos de memoria.
 - Inherente: No necesita operandos. El dato sale implícito.
 - Relativo: Usado en saltos (branch). El dato sale del [[Contador de Programa]] y el offset. 
 
