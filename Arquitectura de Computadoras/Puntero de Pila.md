@@ -5,6 +5,7 @@ En la pila se almacenan temporalmente cosas como:
 - Variables locales
 - Registros del procesador
 - Parámetros de funciones
+- **GUARDA EL ESTADO DE LOS DATOS**
 
 Cuando llega una interrupción, el procesador automáticamente guarda información importante en la pila.
 1. Llega la interrupción
