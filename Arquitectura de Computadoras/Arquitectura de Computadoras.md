@@ -105,3 +105,6 @@ En memoria escribe dividiendo los datos en bytes, ósea que si hay un numero de 
 **Non-Maskarabke interrupt**: Interrupción "de emergencia" o "imparable"
 **Interuption request**: Interrupción que puedo atender o no
 El programador define qué es lo que hace cada rutina de interrupción.
+
+---
+
