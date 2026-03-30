@@ -1,3 +1,4 @@
+[[Ejercicios MC6800]]
 # Introducción
 
 La arquitectura de la computadora es el hardware, pero no podemos estudiar el hardware sin estudiar el software a la vez.

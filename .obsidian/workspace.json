@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Arquitectura de Computadoras/Arquitectura de Computadoras.md",
+                "file": "Ejercicios MC6800.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arquitectura de Computadoras"
+              "title": "Ejercicios MC6800"
             }
           },
           {
@@ -67,14 +67,17 @@
             "id": "03e0ac1a968b80c6",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas de Comunicaciones I/Sistemas de Comunicaciones I.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sistemas de Comunicaciones I"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -245,10 +248,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "03e0ac1a968b80c6",
+  "active": "39c593fafed673b9",
   "lastOpenFiles": [
-    "Arquitectura de Computadoras/Interrupciones.md",
     "Arquitectura de Computadoras/Arquitectura de Computadoras.md",
+    "Ejercicios MC6800.md",
+    "Sistemas de Comunicaciones I/Sistemas de Comunicaciones I.md",
+    "Arquitectura de Computadoras/Interrupciones.md",
     "Interfaz.md",
     "Arquitectura de Computadoras/Registro Índice.md",
     "Arquitectura de Computadoras/Modos de direccionamiento.md",
@@ -258,7 +263,6 @@
     "Arquitectura de Computadoras/Acumuladores A y B.md",
     "Arquitectura de Computadoras/Puntero de Pila.md",
     "Arquitectura de Computadoras/Contador de Programa.md",
-    "Sistemas de Comunicaciones I/Sistemas de Comunicaciones I.md",
     "Arquitectura de Computadoras/Bus de Direcciones.md",
     "Arquitectura de Computadoras/STACK POINTER.md",
     "Arquitectura de Computadoras/Unidad Lógica Aritmética.md",
