@@ -212,3 +212,60 @@ Conmutación (NODOS):
 - De circuitos: Enlace físico permanente. Requiere señalización. Orientado a la conexión. No conmutación de paquetes
 - De paquetes o circuitos virtuales: Se le da una etiqueta a cada bloque de datos y tiene definido el circuito que debe tomar. No se toma decisión de encaminamiento. Si se cae un nodo, se pierde la comunicación. Orientado a la conexión. No es segura. 
 - De mensajes o datagrama: Bloques de datos. Cada nodo toma una decisión de encaminamiento. Red de mejor esfuerzo. Red segura, pero lenta
+
+---
+# Redes de Backbone
+
+## Fibra óptica
+
+La fibra optica no nació en los medios de comunicaciones sino que nació en la medicina. Se dieron cuenta que la fibra optica servia para transmitir señales de dato. 
+
+Las fibras opticas basan su funcionamiento en las letes de la reflexion y la refraccion de la luz (Ley de Snell). Se trata de la relacion existente entre la velocidad de la luz en el vacio ($C=3*10^8 m/s$) y su velocidad en un medio material, lo que da lugar al **indice de refracción** del medio.
+$$
+n =C/v
+$$
+**Reflexión**: es el fenómeno por el cual un rayo de luz rebota al incidir sobre una superficie, permaneciendo en el mismo medio.
+
+**Refracción**: es el cambio de dirección que experimenta un rayo de luz al pasar de un medio a otro con distinto índice de refracción debido a la variación de su velocidad.
+
+(FISICA II - Óptica)
+
+Componente de fibra óptica:
+- Núcleo: Por donde viaja la luz
+- Cladding: rodea al núcleo y tiene un índice de refracción menor, lo que permite la **reflexión interna total** para mantener la luz confinada.
+
+Los haces de luz (modos) cuando entran como pulso de onda cuadrada, salen como onda tipo "distribución normal" porque los haces llegan de manera diferente, a tiempo diferente. [[Dispersión moderna]]. Directamente proporcional a la distancia. Fenómenos más importantes de la fibra óptica multimodo.
+
+**Longitud de onda**: Distancia real que recorre una perturbación en un determinado intervalo de tiempo. $v=\lambda*f$ .
+- La frecuencia solo depende de la fuente que produzca la luz, entonces podemos suponer un f = cte independientemente del medio.
+
+**Ventanas**: son rangos específicos de longitudes de onda en los que la transmisión de luz presenta mínima atenuación y dispersión, permitiendo una comunicación más eficiente. La luz se "frena" menos. Hay un pico aprox a los 1400 nm que es la absorción producida por el ion hidroxilo $OH^{-}$ (Pico de agua).
+### Conformación de una fibra óptica
+Fibras ópticas son un compuestas de hilos finos de cristal en acoda, llamada el corazón (core) y el revestimiento, que puede transmitir la luz en aproximadamente dos terceras partes la velocidad de la luz en el vacío.
+
+**Multimodo**: es aquella en la que la luz se propaga por múltiples trayectorias o modos dentro del núcleo, lo que puede generar dispersión y limitar la distancia de transmisión. Menos ancho de banda y menos distancia.
+
+**Monomodo**: es aquella en la que la luz se propaga en un único modo o trayectoria, permitiendo menor dispersión y mayores distancias de transmisión. No hay dispersión normal, sino dispersión cromática.
+- NZ-DSF: Fibra con dispersión desplazada no nula. Para redes de grandes transmisiones de datos. DWDM: Multiplexación de señal pero longitud de onda transmitida.
+
+Código de colores: Amarillo, monomodo. Naranja, multimodo
+
+Fibra óptica pasiva
+
+**Atenuación**
+- Factores internos: Efecto de fabricación
+- Factores externos: Efecto de instalación o de acciones internas
+**Dispersión**: Espaciamiento de los pulsos de luz mientras esta viaja por la fibra.
+- Cromática
+- Normal
+- por modo de polarización
+**No linealidades**: Efectos acumulativos
+
+Dentro de una red de fibra optica encontramos diferentes componentes que son los encargados de generar, trnamsitir y recibir las señales optimas
+- Emisores y receptores de luz
+	- LEDs
+	- Láser
+
+EDFA
+
+EMPALME DE FUSIÓN
