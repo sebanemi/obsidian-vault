@@ -108,3 +108,28 @@ El programador define qué es lo que hace cada rutina de interrupción.
 
 ---
 
+		ORG $0000
+	LDX #$FB00
+
+NOMBRE LDAA #'N'
+	STAA 0,X
+	INX
+	LDAA #'O'
+	STAA 0,X
+	INX
+	LDAA #'M'
+	STAA 0,X
+	INX
+	LDAA #'B'
+	STAA 0,X	
+	INX
+	LDAA #'R'
+	STAA 0,X
+	INX
+	LDAA #'E'
+	STAA 0,X
+	INX
+	LDAA #':'
+	STAA 0,X
+
+	END
