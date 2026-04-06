@@ -269,3 +269,30 @@ Dentro de una red de fibra optica encontramos diferentes componentes que son los
 EDFA
 
 EMPALME DE FUSIÓN
+
+---
+WDM: Wavelength Division Multiplexing. Consiste en utilizar las dos ventanas de transmision a la vez.
+
+DWDM: Dense Wavelength Division Multiplexing. 
+
+**Demultiplexaje por prisma**: Se hace pasar un rayo de luz policromático por un prisma y las diferentes longitudes de onda son refractadas en ángulos diferentes. Estos rayos luego son enfocados por un lente hasta el punto de entrada a una nueva fibra. El mismo proceso puede ser usado a la inversa para multiplexar. 
+
+**Demultiplexaje por difracción**: Se basa en el principio de difracción de la luz y lo que se hace es que se hace incidir un rayo policromático de luz sobre un arreglo de líneas finas que reflejan o transmiten la luz, cada longitud de onda se refracta de manera diferente en la rejilla.
+
+**Demultiplexaje por filtrado**
+
+Componentes de una red DWDM:
+- Transmisión
+- Amplificación
+- Gestión de servicios
+- Red de administración
+- ETC
+
+OADM: Dispositivos que permiten insertar o remover una o varias señales ópticas en un determinado punto de la fibra.
+
+---
+## Par trenzado
+Se trenzan para cancelar los campos magnéticos generados por la corriente que pasa por cada cable, y que no generen ruido.
+- UTP: Sin protección.
+- STP: Con protección.
+
