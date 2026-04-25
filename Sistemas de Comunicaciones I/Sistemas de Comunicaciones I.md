@@ -296,3 +296,48 @@ Se trenzan para cancelar los campos magnéticos generados por la corriente que p
 - UTP: Sin protección.
 - STP: Con protección.
 
+---
+
+Conexion UTP:
+	Nosotrs usamos la norma A
+
+---
+# Unidad II - Transmisión de señales
+Vamos a ver la parte física de las señales.
+
+Dijimos que teniamos redes convergentes, osea que brindan cualquier tipo de servicio. Hay señales eléctricas, ópticas o electromagnéticas.
+
+**Señales analógicas**: Pueden ser presentadas por funciones que toman un numero infinto de valores en cualquier intervalo de la variable. La inteligencia está en la onda, entonces si cambias la forma de la onda, cambias la información.
+
+**Señales digitales**: Pueden ser representadas por funciones que toman un numero finito de valores en cualquier intervalo de la variable. La inteligencia está en la codificación y no en la forma.
+
+Un **CODEC** es un codificador y decodificador de señales. Transmiten señales analógicas por redes digitales. El CODEC generalmente no está en mi casa, sino en las instalaciones del prestador de servicio. 
+
+Un **MODEM** es un modulador y demodulador de señales. Agarra la señal digital, la modula y permite que se pueda transmitir un señal digital por una red analógica.
+
+El MODEM y el CODEC son equipos simétricos pero que usan técnicas distintas.
+
+No existen canales ideales, por lo que las señales se modifican en el viaje. En el medio hay fenómenos que afectan a la señal:
+- Atenuación: Debilitación de señal
+- Distorsión: Deformación de la señal debido a la disposición del circuito si es resistivo o capacitivo
+- Ruido: Generado por el flujo de electrones. Siempre presente
+- Retardos: Cuando debo esperar demasiado para recuperar todo el pulso.
+
+Siempre que tengo una señal analógica uso un amplificador, pero no lo puedo usar infinititas veces porque además de amplificarse la señal, se amplifica el ruido y distorsión.
+
+Las señales digitales se deforman a lo largo del canal. Para aumentar el alcance se debe repetir y regenerar los pulsos en punto intermedias. Se usan repetidores regenerativos que regeneran cada pulso y vuelven a armar la señal original. Las señales que entran están deformadas y con ruido, las señales que salen son digitales y de la misma forma que la original.
+
+Aparece un concepto nuevo en las señales digitales, que es la duración del pulso, representado por $\tau$ (Tau)
+
+Longitud de onda:  $\lambda = c/f$, entonces $[\lambda]=(m/s)/(1/s) => [\lambda]=m$
+
+La serie de Fourier permite analizar el comportamiento de las señales digitales que atraviesan un canal analógico. 
+
+$\tau = T*1/2$ 
+
+En la transformada de fourier quiero saber cuanto energía aporta cada término para determinar si es "importante" o no.
+
+¿Ancho de banda de que? Ancho de banda de la señal, el que sale con fourier
+
+El ancho de banda de canal es arbitrario, porque se suelen definir donde la atenuacion disminuye el valor de la señal a la mitad del centro del canal. 
+
