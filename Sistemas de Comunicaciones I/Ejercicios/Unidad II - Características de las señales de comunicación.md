@@ -47,4 +47,17 @@ $$dBm =10\log{(\frac{V}{\sqrt{0.6}})^2}$$
 [^1]: $\sqrt{0.6}\approx 0.775$
 $$dBm=2\cdot 10\log{\frac{V}{0.775}}$$
 $$dBm=20\log{\frac{V}{0.775}}=dBu$$
-$$\boxed{dBm =dBu\Leftrightarrow R=600\Omega}$$
+$$\boxed{dBm =dBu\Leftrightarrow R=600\Omega}$$---
+15. Dado un canal de transmisión de datos coaxil con una atenuación a la frecuencia de operación de 0,8 db/100 metros y donde la sensibilidad del receptor es - 10 dbm .Calcular la potencia mínima que deberá tener el transmisor si la longitud del coaxil es de 1200 metros. Indicar cual es la potencia mínima del receptor en miliwatts.
+
+Atenuación: $\alpha=0.8\frac{db}{100m}$
+Longitud: $L=1200m$
+Sensibilidad: $P_R=-10dBm$
+
+Atenuación total: $A_T=\alpha\cdot L$
+$$A_T=0.8\frac{db}{100m}\cdot 1200m$$
+$$\boxed{A_T=9.6 dB}$$
+$P_R=P_T-A_T\Rightarrow P_T=P_R+A_T$ 
+$$P_T=-10dBm+9.6dB$$
+$$\boxed{P_T=-0.4dBm}$$
+$dBm = 10\log(\frac{P_{mW}}{1mW})$
