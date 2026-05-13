@@ -26,7 +26,6 @@ Es una circunferencia con centro $(2,-1)$ y radio $r=4$
 Ejemplo 2:
 $$x^2+y^2-4x+6y-12=0$$
 Es la ecuación de una circunferencia de forma desarrollada, por lo que para llevarla a canónica hay que completar cuadrados.
-
 # Intersección con una recta
 
 Supongamos que tenemos una recta $y=ax+b$ y una circunferencia de ecuación $x^2+Ax+y^2+By+F=0$. Lo que tenemos que hacer es lo siguiente:
@@ -49,9 +48,9 @@ $$(1+a^2)x^2+(A+2a+Ba)x+(Bb+F)=0$$
 $$b^2-4ac=(A+2a+Ba)^2-4(1+a^2)(Bb+F)$$
 Como dijimos antes, el discriminante determina cuantas soluciones tiene la ecuación. Sin embargo, falta determinar que significan esas soluciones.
 
-- Si $\Delta>0$ entonces, la recta corta a la circunferencia exactamente en dos puntos **siempre** (secante).
-- Si $\Delta=0$ entonces, la recta toca a la circunferencia exactamente en un punto (tangente).
-- Si $\Delta=0$ entonces, la recta no toca a la circunferencia en ningún punto (exterior).
+- Si $\Delta>0$ entonces, la recta corta a la circunferencia exactamente en dos puntos **siempre** (**secante**).
+- Si $\Delta=0$ entonces, la recta toca a la circunferencia exactamente en un punto (**tangente**).
+- Si $\Delta=0$ entonces, la recta no toca a la circunferencia en ningún punto (**exterior**).
 
 ---
 # Elipses
@@ -77,3 +76,53 @@ Es lo mismo que hacerlo con una circunferencia dado que una circunferencia es un
 
 ---
 # Hipérbolas
+
+La diferencia entre las distancias desde cualquier punto hasta los dos focos es constante. La ecuación canónica de la hipérbola está dada de la forma:
+$$\pm\frac{(x-x_0)^2}{a^2}\mp\frac{(y-y_0)^2}{b^2}=1$$
+Es muy fácil de reconocer una hipérbola dado que **SI O SI** la parte de $x^2$ y de $y^2$ tienen signo contrario (si uno suma, el otro resta). De esto depende de como se desarrolle la hipérbola:
+
+- Si la $x$ está sumando (para ayudar a explicarlo lo escribo como $x^+$), la hipérbola se "mueve" sobre el eje x
+- Si la $y$ está sumando, ósea que $x$ resta, (para ayudar a explicarlo lo escribo como $y^+$) la hipérbola se "mueve" sobre el eje y.
+
+Elementos notables:
+- Centro: $C=(x_0,y_0)$
+- Relación fundamental: $c^2=a^2+b^2$
+- Vértices:
+	- $V_{x^+}=(x_0\pm a,y_0)$
+	- $V_{y^+}=(x_0,y_0\pm b)$
+- Focos:
+	- $F_{x^+}=(x_0\pm c,y_0)$
+	- $F_{y^+}=(x_0,y_0\pm c)$
+- Asíntotas:
+	- $A_{x^+}:y-y_0=\pm\frac{b}{a}(x-x_0)$
+	- $A_{y^+}:y-y_0=\pm\frac{a}{b}(x-x_0)$
+# Intersección entre una recta y una hipérbola
+
+El procedimiento es análogo a lo realizado en circunferencia y elipse.
+
+---
+# Parábola
+
+La parábola es el conjunto de puntos que están a la misma distancia de un punto fijo llamado foco y de una recta llamada directriz. La ecuación canónica de la parábola viene dada por:
+$$(x-x_0)^2=4p(y-y_0)$$
+$$(y-y_0)^2=4p(x-x_0)$$
+Es muy fácil de reconocer una parábola dado que solamente vamos a tener un termino al cuadrado. Como se ve arriba, la parábola puede tener $x^2$ o $y^2$, entonces se puede desarrollar sobre el eje x o sobre el eje y.
+
+<p align="center">
+  <img src="Pasted image 20260513100448.png" width="552">
+</p>
+
+Elementos notables:
+- Vértice: $V=(x_0,y_0)$
+- Foco: 
+	- $F_{vertical}=(x_0,y_0+p)$
+	- $F_{horizontal}=(x_0+p,y_0)$
+- Directriz:
+	- $D_{vertical}:y=y_0-p$
+	- $D_{horizontal}:x=x_0-p$
+- Eje de simetría:
+	- $E.S.:x=x_0$
+	- $E.S.:y=y_0$
+# Intersección entre una recta y una hipérbola
+
+El procedimiento es análogo a lo realizado en circunferencia y elipse.
