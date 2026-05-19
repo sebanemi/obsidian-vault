@@ -37,10 +37,11 @@ La compuerta XOR entrega un nivel lógico alto ($1$ o $H$) únicamente cuando su
 
 ## 4. Explicación Técnica del Circuito
 
-![[Pasted image 20260519100624.png|349]]
-
 El diseño implementado destaca por ser una arquitectura híbrida que optimiza el uso de componentes para lograr la función lógica XOR mediante la combinación de subetapas:
 
+<p align="center">
+  <img src="Pasted image 20260519100624.png" width="349">
+</p>
 ### A. Bloques Complementarios con MOSFETs (Inversores / Conmutadores)
 
 El circuito cuenta con dos bloques idénticos compuestos por pares de MOSFETs de canal P (superior) y canal N (inferior) conectados en una configuración similar a un inversor CMOS tradicional.
@@ -67,19 +68,27 @@ Para asegurar la correcta definición de los niveles lógicos de salida y otorga
 
 - **Caso A=0, B=0:** Los transistores de salida permanecen en corte debido a la falta de polarización en sus bases. La salida se mantiene firmemente en $0\text{ V}$ ($L$).
 
-![[Pasted image 20260519100358.png|381]]
+<p align="center">
+  <img src="Pasted image 20260519100624.png" width="349">
+</p>
 
 - **Caso A=1, B=0:** _(Es la captura de pantalla provista)_ Al estar una entrada en alto y la otra en bajo, las ramas de diodos conducen de tal forma que inyectan corriente en la base de la etapa BJT activa. Se observa el camino verde ($+5\text{ V}$) polarizando la salida a un estado alto ($H$). El nivel en el pin de salida efectivamente responde a la condición lógica esperada.
 
-![[Pasted image 20260519100442.png|379]]
+<p align="center">
+  <img src="Pasted image 20260519100624.png" width="349">
+</p>
 
 - **Caso A=0, B=1:** Condición simétrica a la anterior. El segundo bloque activa el transistor BJT correspondiente, manteniendo la salida en nivel alto.
 
-![[Pasted image 20260519100500.png|381]]
+<p align="center">
+  <img src="Pasted image 20260519100624.png" width="349">
+</p>
 
 - **Caso A=1, B=1:** Ambas señales en alto provocan la conmutación de la lógica de diodos bloqueando la corriente hacia las bases de los BJTs. Ambos transistores van al corte y la salida cae a $0\text{ V}$ ($L$).
 
-![[Pasted image 20260519100520.png|375]]
+<p align="center">
+  <img src="Pasted image 20260519100624.png" width="349">
+</p>
 
 ---
 ## 6. Conclusión
