@@ -57,9 +57,6 @@ $$n_{mac}=(1+\frac{S}{N})^{\frac{1}{2}}$$
 $$C=2\Delta f\log_2{(1+\frac{S}{N})^{\frac{1}{2}}}[bps]$$
 $$\boxed{C=\Delta f\log_2(1+\frac{S}{N}) [bps]}$$
 
-
-
-
-
+Cada vez que yo quiero comunicarme con otro de "la misma especie", los cables están cruzados (Ej: tx, rx).
 
 
