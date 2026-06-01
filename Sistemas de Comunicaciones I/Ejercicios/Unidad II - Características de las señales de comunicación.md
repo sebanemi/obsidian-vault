@@ -61,3 +61,22 @@ $P_R=P_T-A_T\Rightarrow P_T=P_R+A_T$
 $$P_T=-10dBm+9.6dB$$
 $$\boxed{P_T=-0.4dBm}$$
 $dBm = 10\log(\frac{P_{mW}}{1mW})$
+
+$log(\frac{P_{mW}}{1mW})=dBm/10$
+
+$10^{dBm/10}=\frac{P_{mW}}{1mW}$
+
+$P_{mW}=10^{-10/10}$
+$P_{mW}=0,1$
+$$\boxed{P_{mW}=0,1mW}$$
+---
+16. En base al ejercicio anterior indicar la ganancia de un amplificador que se debería colocar a mitad de camino entre el transmisor y el receptor si se desea cambiar a este último por otro de sensibilidad 100 veces menor.
+
+$P_{nuevo}=P_{ant}*100$
+$P_{nuevo}=0,1mW*100$
+$P_{nuevo}=10mW$
+
+Antes teniamos una distancia total de 1200m, ahora tenemos un amplificador a la mitad. Tramos de 600m
+
+$$A_{tramo}=\frac{0,8dB}{100m}\cdot 600m$$
+$$A_{tramo}=4,8dB$$
